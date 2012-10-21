@@ -1,10 +1,14 @@
-# Netzke::Basepack::Dm
+# Netzke Basepack DataMapper adapter
 
-TODO: Write a gem description
+Allows using Basepack data componets (grids and panels) with DataMapper.
+
+Implements [Netzke::Basepack::DataAdapters::AbstractAdapter](https://github.com/nomadcoder/netzke-basepack/blob/master/lib/netzke/basepack/data_adapters/abstract_adapter.rb) from Basepack.
+
+**Warning: WIP. Please, contribute!**
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile after 'netzke-basepack':
 
     gem 'netzke-basepack-dm'
 
@@ -12,13 +16,15 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install netzke-basepack-dm
-
 ## Usage
 
-TODO: Write usage instructions here
+After installation, you should be able to simply configure Basepack components with DataMapper models, e.g.:
+
+    MyGrid < Netzke::Basepack::GridPanel
+      def configure(c)
+        c.model = "MyDataMapperModel"
+      end
+    end
 
 ## Contributing
 
@@ -27,3 +33,7 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Credits
+
+Initially was implemented as part of Basepack by @pschyska
