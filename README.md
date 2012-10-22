@@ -4,13 +4,13 @@ Allows using Basepack data componets (grids and panels) with DataMapper.
 
 Implements [Netzke::Basepack::DataAdapters::AbstractAdapter](https://github.com/nomadcoder/netzke-basepack/blob/master/lib/netzke/basepack/data_adapters/abstract_adapter.rb) from Basepack.
 
-**Warning: WIP. Please, contribute!**
+**Warning: WIP (and not published on rubygems yet). Please, contribute!**
 
 ## Installation
 
 Add this line to your application's Gemfile after 'netzke-basepack':
 
-    gem 'netzke-basepack-dm'
+    gem 'netzke-basepack-dm', git: "git://github.com/nomadcoder/netzke-basepack-dm"
 
 And then execute:
 
